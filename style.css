@@ -1,10 +1,10 @@
 body{
-    background-image: url(back.png);
+    background-image: url("back.png");
 
 }
 .card {
    
-    width: 1250px;
+    width: 1260px;
     display: flex;
     align-items: center;
     box-shadow: 4px 7px 5px gray;
@@ -21,7 +21,6 @@ h1 {
 a {
     text-decoration: none;
     margin-right: 20px;
-    flex-direction: right;
     color: grey;
 }
 
@@ -52,8 +51,8 @@ h2{
       .id p {
         font-size: 14px;
         text-align: left;
+      
       }
-
 
       .text{
         padding: 25px;
@@ -73,14 +72,12 @@ h2{
 /* Display */
 
 #display {
-    display: block;
-
+ 
   width: 91.3%;
   height: 90px;
   border: none;
   border-radius: 10px 10px 0 0;
   background: #898b96;
-  outline: none;
   color: white;
   font-size: 30px;
   text-align: right;
@@ -132,4 +129,5 @@ h2{
       .para p {
         font-size: 14px;
         text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }

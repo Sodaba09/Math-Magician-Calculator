@@ -30,9 +30,10 @@ buttons.forEach(function (button) {
           .replaceAll("÷", "/");
 
         display.value = eval(math);
-      } catch (error) {
+      }
+    catch (error) {
         display.value = "Error";
       }
     }
   });
-});
+});   
