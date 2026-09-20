@@ -176,16 +176,15 @@ h2{
 }
 
 
-/* =========================
-   Mobile
-   ========================= */
 @media (max-width: 600px) {
 
     body {
         margin: 0;
         padding: 10px;
+
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center top;
     }
 
     /* Navbar */
@@ -195,25 +194,29 @@ h2{
         box-sizing: border-box;
 
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
 
         padding: 10px;
     }
 
+    /* Math Magician */
     .card h1 {
         width: 100%;
-        font-size: 19px;
+        text-align: left;
+        font-size: 18px;
+
         margin: 0 0 10px 0;
     }
 
+    /* Navbar links */
     .card a {
         margin-right: 12px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
 
-    /* Main text box */
+    /* Main box */
     .id {
         width: 100%;
         height: auto;
@@ -236,28 +239,31 @@ h2{
     /* Calculator */
     .calculator {
         position: relative;
+
         top: auto;
         right: auto;
 
-        width: 100%;
+        width: 90%;
         max-width: 465px;
 
-        margin: 30px auto;
+        margin: 40px auto;
     }
 
+    /* Calculator display */
     #display {
         width: calc(100% - 40px);
         height: 70px;
         font-size: 24px;
     }
 
+    /* Calculator buttons */
     .buttons button {
         height: 55px;
         font-size: 14px;
     }
 
 
-    /* Bottom paragraph */
+    /* Paragraph */
     .para {
         width: 100%;
         height: auto;
@@ -271,4 +277,3 @@ h2{
         font-size: 13px;
         line-height: 1.6;
     }
-}
