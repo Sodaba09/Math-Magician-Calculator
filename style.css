@@ -8,7 +8,7 @@ body{
     display: flex;
     align-items: center;
     box-shadow: 4px 7px 5px gray;
-    
+    max-width: 1260px;
 }
 
 h1 {
@@ -31,7 +31,6 @@ a:hover {
 h2{
     text-align: left;
 }
-
 
  .id {
     margin: auto;
@@ -83,7 +82,6 @@ h2{
   text-align: right;
   padding: 10px 20px;
 }
-
 /* Buttons */
 
 .buttons {
@@ -100,14 +98,12 @@ h2{
   font-size: 14px;
   cursor: pointer;
 }
-
 /* Orange buttons */
 
 .buttons .orange {
   background: #ff9138;
   color: #222;
 }
-
 /* Zero button */
 
 .buttons .zero {
@@ -125,9 +121,154 @@ h2{
     width: 1000px;
       }
 
-
       .para p {
         font-size: 14px;
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
+     
+ /* =========================
+   Tablet
+   ========================= */
+@media (max-width: 900px) {
+
+    .card {
+        width: 95%;
+        max-width: 95%;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+    }
+
+    .card a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .id {
+        width: 85%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .para {
+        width: 85%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .calculator {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 90%;
+        max-width: 465px;
+        margin: 40px auto;
+    }
+
+    #display {
+        width: calc(100% - 40px);
+    }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+@media (max-width: 600px) {
+
+    body {
+        margin: 0;
+        padding: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Navbar */
+    .card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding: 10px;
+    }
+
+    .card h1 {
+        width: 100%;
+        font-size: 19px;
+        margin: 0 0 10px 0;
+    }
+
+    .card a {
+        margin-right: 12px;
+        font-size: 13px;
+    }
+
+
+    /* Main text box */
+    .id {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .id h1 {
+        font-size: 19px;
+    }
+
+    .id p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    /* Calculator */
+    .calculator {
+        position: relative;
+        top: auto;
+        right: auto;
+
+        width: 100%;
+        max-width: 465px;
+
+        margin: 30px auto;
+    }
+
+    #display {
+        width: calc(100% - 40px);
+        height: 70px;
+        font-size: 24px;
+    }
+
+    .buttons button {
+        height: 55px;
+        font-size: 14px;
+    }
+
+
+    /* Bottom paragraph */
+    .para {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .para p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
